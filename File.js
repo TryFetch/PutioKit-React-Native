@@ -1,5 +1,3 @@
-import PutioKit from '../index';
-
 export class File {
 
     // The file ID
