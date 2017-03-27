@@ -65,6 +65,54 @@ export class File {
         if(json.start_from) this.startFrom = json.start_from;
     }
 
+    async rename(name) {
+        
+    }
+
+    async getProgress() {
+
+    }
+
+    async convertToMp4() {
+
+    }
+
+    async getMp4Status() {
+
+    }
+
+    async share(friends) {
+
+    }
+
+    async unshare(friends) {
+
+    }
+
+    async delete() {
+
+    }
+
+    async move(to) {
+
+    }
+
+    async getSharedWith() {
+
+    }
+
+    async getSubtitles() {
+
+    }
+
+    async setPosition(position) {
+
+    }
+
+    async deletePosition() {
+
+    }
+
 }
 
 export default File;
