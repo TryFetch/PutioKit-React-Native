@@ -21,6 +21,31 @@ class PutioKit {
         return base + `/oauth2/authenticate?client_id=${clientId}&response_type=token&redirect_uri=${redirectUri}`
     }
 
+    // Make a request to the Put.io API
+    async request(endpoint, method, data) {
+
+        let payload = {
+            method: method || 'GET',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': window.Laravel.csrfToken
+            }
+        };
+
+        if(data) payload.body = JSON.stringify(data);
+
+        let json = await fetch(endpoint, payload)
+            .then(response => response.json());
+
+        if(json.message && json.type) {
+            let notification = new Notification(json.message);
+            notifier.push(notification);
+        }
+
+        return json;
+    }
+
 }
 
 // Contruct the singleton
