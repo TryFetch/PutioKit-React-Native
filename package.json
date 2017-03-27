@@ -1,0 +1,9 @@
+{
+  "name": "PutioKit-React-Native",
+  "version": "1.0.0",
+  "description": "A React Native version of PutioKit",
+  "main": "index.js",
+  "repository": "git@github.com:wearecocoon/PutioKit-React-Native.git",
+  "author": "Stephen Radford <steve228uk@gmail.com>",
+  "license": "MIT"
+}
