@@ -1,3 +1,6 @@
+import File from './models/File';
+
+// The main class for PutioKit
 class PutioKit {
 
     base = "https://api.put.io/v2";
@@ -20,5 +23,9 @@ class PutioKit {
 
 }
 
+// Contruct the singleton
 const putioKit = new PutioKit;
+
+// Exports
 export default putioKit;
+export { File } from './models/File';
