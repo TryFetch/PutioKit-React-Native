@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:wearecocoon/PutioKit-React-Native.git",
   "author": "Stephen Radford <steve228uk@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "es6-enum": "^1.1.0"
+  }
 }
